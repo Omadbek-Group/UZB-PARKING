@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42de7d83194610445b1e02a97e121d98, type: 3}
+  m_Name: EC_AvtodromDefault
+  m_EditorClassIdentifier: UzbCarParking.Runtime::UzbCarParking.Avtodrom.ExamConfig
+  disclaimer: "O\u2018yin ichki baholash tizimi. Rasmiy imtihon qoidalari bilan tasdiqlanmagan."
+  startingScore: 100
+  passScore: 80
+  failOnCriticalPenalty: 1
+  failExamOnExerciseFail: 1
+  examOrder:
+  - estakada
+  - parallel
+  - box
+  moveOffDistance: 0.5
+  requireSeatbelt: 1
+  requireLeftSignalOnMoveOff: 1
+  speedLimitKmh: 20
+  speedViolationGraceSeconds: 1
+  speedViolationCooldown: 5
+  handbrakeDrivingSpeedKmh: 3
+  handbrakeDrivingGraceSeconds: 2
+  collisionMinImpact: 1
+  collisionCooldown: 2
+  requireHandbrakeToFinishParking: 1
+  estakadaTimeLimit: 120
+  estakadaStopZoneLength: 1.2
+  estakadaMinStopSeconds: 1
+  estakadaMaxRollback: 0.3
+  estakadaCriticalRollback: 1
+  parallelTimeLimit: 180
+  parallelBayLength: 6.5
+  parallelBayWidth: 2.5
+  parallelMaxHeadingError: 10
+  boxTimeLimit: 180
+  boxWidth: 3
+  boxDepth: 6
+  boxMaxHeadingError: 12
+  penalties:
+  - type: 0
+    label: Konusga tegildi
+    points: 5
+    critical: 0
+  - type: 1
+    label: Chiziq bosildi
+    points: 5
+    critical: 0
+  - type: 2
+    label: Tezlik chegarasi oshirildi
+    points: 5
+    critical: 0
+  - type: 3
+    label: Xavfsizlik kamari taqilmagan
+    points: 10
+    critical: 0
+  - type: 4
+    label: Burilish signali yoqilmagan
+    points: 5
+    critical: 0
+  - type: 5
+    label: "Qo\u2018l tormozi bilan harakatlanish"
+    points: 3
+    critical: 0
+  - type: 6
+    label: Estakadada orqaga ketish
+    points: 10
+    critical: 0
+  - type: 7
+    label: "Estakadada ko\u2018p orqaga ketish"
+    points: 25
+    critical: 1
+  - type: 8
+    label: "Belgilangan joyda to\u2018xtalmadi"
+    points: 10
+    critical: 0
+  - type: 9
+    label: "To\u2018siqqa urilish"
+    points: 10
+    critical: 0
+  - type: 10
+    label: Mashq vaqti tugadi
+    points: 25
+    critical: 1

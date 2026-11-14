@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60bc99ead8de8ab4fa057e0a6d7689d9, type: 3}
+  m_Name: VC_PlaceholderHatchback
+  m_EditorClassIdentifier: UzbCarParking.Runtime::UzbCarParking.Vehicle.VehicleConfig
+  vehicleId: placeholder_hatchback
+  displayName: Sinov xetchbeki (placeholder)
+  vehiclePrefab: {fileID: 0}
+  length: 3.6
+  width: 1.6
+  height: 1.5
+  wheelBase: 2.38
+  trackWidth: 1.4
+  footprintCenterOffset: {x: 0, y: 0, z: 0}
+  mass: 1000
+  centerOfMassOffset: {x: 0, y: 0.38, z: 0.1}
+  linearDamping: 0.02
+  angularDamping: 0.5
+  aerodynamicDrag: 0.4
+  downforce: 0.3
+  idleRpm: 800
+  maxRpm: 6200
+  torqueCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 800
+      value: 70
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 2000
+      value: 85
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 3500
+      value: 92
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 4800
+      value: 88
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 6200
+      value: 68
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  engineResponseTime: 0.12
+  launchRpmBoost: 1600
+  engineBrakingTorque: 120
+  driveType: 0
+  forwardGearRatios:
+  - 3.73
+  - 2.05
+  - 1.32
+  - 0.97
+  - 0.76
+  reverseGearRatio: 3.5
+  finalDriveRatio: 4.2
+  drivetrainEfficiency: 0.85
+  autoShiftUpRpm: 4800
+  autoShiftDownRpm: 1800
+  shiftDuration: 0.25
+  creepTorque: 180
+  creepMaxSpeed: 2
+  requireBrakeToLeavePark: 1
+  maxBrakeTorque: 1500
+  frontBrakeBias: 0.65
+  handbrakeTorque: 2500
+  parkLockTorque: 6000
+  maxSteerAngle: 35
+  steerAngleAtHighSpeed: 12
+  highSpeedKmh: 100
+  steerSpeed: 110
+  steeringWheelMaxDegrees: 450
+  wheelRadius: 0.29
+  wheelWidth: 0.18
+  wheelMass: 15
+  wheelDampingRate: 0.25
+  forceAppPointDistance: 0.1
+  suspensionDistance: 0.18
+  springStrength: 30000
+  damperStrength: 3000
+  suspensionTargetPosition: 0.5
+  antiRollStiffness: 5000
+  forwardExtremumSlip: 0.4
+  forwardExtremumValue: 1
+  forwardAsymptoteSlip: 0.8
+  forwardAsymptoteValue: 0.5
+  forwardStiffness: 1.5
+  sidewaysExtremumSlip: 0.25
+  sidewaysExtremumValue: 1
+  sidewaysAsymptoteSlip: 0.5
+  sidewaysAsymptoteValue: 0.75
+  sidewaysStiffness: 1.6
+  absEnabled: 1
+  absSlipThreshold: 0.35
+  absReleaseFactor: 0.3
+  tcsEnabled: 1
+  tcsSlipThreshold: 0.3
+  tcsTorqueFactor: 0.35
+  fuelCapacityLiters: 35
+  startFuelLiters: 30
+  idleFuelLitersPerHour: 0.8
+  maxFuelLitersPerHour: 18
+  driverEyeLocalPosition: {x: -0.35, y: 1.15, z: -0.05}
+  followDistance: 6
+  followHeight: 2.3
+  damageImpactThreshold: 3
+  damagePerImpactUnit: 2
+  substepSpeedThreshold: 5
+  substepsBelowThreshold: 12
+  substepsAboveThreshold: 15
