@@ -25,7 +25,7 @@ namespace UzbCarParking.EditorTools
             EditorSceneManager.SaveScene(menu);
 
             Scene avto = EditorSceneManager.OpenScene(AvtodromPath, OpenSceneMode.Single);
-            GameObject car = Place("Showroom_Car", "car_placeholder.fbx", new Vector3(20f, 0f, 0f), 1f);
+            GameObject car = Place("Showroom_Car", "car_spark.fbx", new Vector3(20f, 0f, 0f), 1f);
             if (car != null && car.GetComponent<CarDoor>() == null)
             {
                 car.AddComponent<CarDoor>();
